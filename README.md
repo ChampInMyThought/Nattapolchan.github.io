@@ -1,2 +1,2 @@
-# Nutbigbrain
+# Nut
 hello
