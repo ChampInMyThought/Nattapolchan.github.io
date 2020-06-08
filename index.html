@@ -12,8 +12,15 @@
             #btn1:hover , .fa-facebook:hover , .fa-twitter:hover , .fa-instagram:hover{
                     background-color: #e8eeef;
                     color: black;
-                    box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8)
+                    box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
+                    animation-name: hover;
+                    animation-duration: 4s;
                                                       }
+            @keyframe hover {
+                  0%   {background-color:red; left:0px; top:0px;}
+                  100% {background-color:red; left:0px; top:20px;}
+                
+                
             #div0:hover , #div1:hover , #div2:hover{
                     text-shadow: 2px 2px 2px 2px #705546;
                 color: #d8cba6;}
