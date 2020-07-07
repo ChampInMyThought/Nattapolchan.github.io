@@ -1,0 +1,83 @@
+ #frame { color:#0f554d;font-size:30px; text-align :center;} 
+            a {text-decoration:none;}
+            body {
+                  background: linear-gradient(to bottom left, #d8cba6 0%, #729280 100%);
+                  line-height: 0.8;
+                  align-content:center;
+                  font-family:"Didact Gothic";
+                  background-attachment:fixed;
+            }
+            #btn1:hover , .fa-facebook:hover , .fa-twitter:hover , .fa-instagram:hover{
+                    background-color: #e8eeef;
+                    color: black;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
+                                                      }
+                
+            #div0:hover , #div1:hover , #div2:hover{
+                    text-shadow: 2px 2px 2px 2px #705546;
+                color: #d8cba6;}
+            #btn1{
+                  
+                  color : #e8eeef;
+                  background-color: #7811bd; 
+                  border: none;
+                   /* White text */
+                  padding: 20px 30px; 
+                  font-size: 25px; 
+                  border-radius: 8px;
+                  
+            }
+            
+            .fa{
+                height: 40px;
+                width: 40px;
+                background: rgba(7, 139, 100, 0.4);
+                border-radius: 50%;
+                margin-top: 10px;
+                border-bottom:none;
+                border-left:none;
+                padding: 19px;
+                }
+            .fa:hover{
+                height: 40px;
+                width: 40px;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 50%;
+                border-top: 2px solid #011113;
+                border-right: 2px solid transparent;
+                border-bottom:none;
+                border-left:none;
+                animation: spinner5 700ms linear infinite;
+                padding: 19px;
+                }
+
+            @keyframes spinner5 {
+                    to {
+                    transform: rotate(360deg);
+                    }
+                }
+            
+            .fa-facebook {
+                        background: #7811bd;
+                         color: #e8eeef;
+                         }
+
+            .fa-twitter {
+                         background: #7811bd;
+                            color: #e8eeef;
+                        }
+
+            .fa-google {
+                         background: #7811bd;
+                         color: #e8eeef;
+                        }
+
+             .fa-instagram {
+                        background: #7811bd;
+                          color: #e8eeef;
+                        }
+            h {color:green;}
+            #career{font-family:"Caveat Brush";}
+            #white {color:lavender;}
+            .blue {color:midnightblue;}
+        

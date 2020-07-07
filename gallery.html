@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .home
+        {
+            padding: 10px,10px;
+            color: rgb(8, 74, 77);
+            font-size: 30px;
+        }
+        .about
+        {
+            padding: 10px,10px;
+            color: rgb(8, 74, 77);
+            font-size: 30px;
+        }
+        .home:hover
+        {
+            
+            animation: spinner 2s ease infinite;
+        }
+        .about:hover
+        {
+            animation: spinner 2s ease infinite;
+        }
+        @keyframes spinner
+        {
+            from{transform: rotate(0deg);}
+            to{transform:rotate(180deg);}
+        }
+        .signature{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="home" ><a href="index.html">Home</a></div>
+        <img class="signature" src="signature.png" alt="my signature">
+        <a class="about" href="about.html">About me</a>
+    </header>
+</body>
