@@ -38,24 +38,13 @@ li a:hover {
     color:#b8a488;
     
 }
-.pic{
-    width:208px;
-    align: center;
-    animation-name: pict;
-    animation-duration: 2s;
-}
-  @keyframes pict{
-    from{ opacity:0.2;}
-    to{opacity:1;}
-  }
-  
-
   #side{
     width:21.47%;
     color:#f6ede4;
-    background-color:#b68440;
+    background: linear-gradient(to bottom left, #d8cba6 0%, #ffffff 100%);
+    border: #111;
     text-align:left;
-    height:100px;
+    height:200px;
     float:left;
     padding-left: 50px;
   }
@@ -64,7 +53,7 @@ li a:hover {
     color:#f6ede4;
     background-color:#8e9ca5;
     padding: 20px;
-    height: 100px;
+    height: 200px;
     float:left;
   }
   #main:after {
@@ -76,45 +65,57 @@ li a:hover {
      font-family:"Alegreya Sans SC";
      color: #eceadc;
     }
-    h2{
+    p{
       font-family:"Devonshire";
-      color:#b68440;
+      color:#f7c686;
     }
     .footer {
   padding: 10px;
   font-size: 40px;
   text-align: center;
-  background-color:#f6ede4;
+  background-color:#af7235;
   width:100%;
 }
   
 .pic {
-  height: 208px;
-  width: 208px;
+  height: 200px;
+  width: 170px;
+  margin-left: 18px;
+  margin-top:0px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-top-color: #fff;
   border-bottom-color: #fff;
-  animation: spinner3 800ms ease infinite;
+  animation: spinner3 2s ease infinite;
 }
 
 @keyframes spinner3 {
-    to {
+    50% {opacity: 0;}
+    100% 
+    {
+      opacity:1;
       transform: rotate(360deg);
     }
 }
-     
+.signature
+{
+  height: 180px;
+  margin-top: 10px;
+  position:absolute;
+  opacity: 1;
+  transform:translate(0px,0px);
+}
   
 </style>
 </head>
 <body>
-
 <ul>
   <li><a class="active" href="index.html"><b>Home</b></a></li>
   <li><a href="gallery.html"><b>My gallery</a></b></li>
   <li><a class="disable" href="about.html"><b>About me</b></a></li>
 </ul>
+<img class="signature" src="signature.png" alt="my signature">
   <div id="main">
   <div id="side">
     <img class="pic" src="IMG_0395.jpg" alt="me">
@@ -128,7 +129,7 @@ li a:hover {
     </div>
   </div>
     <div class="footer">
-  <h2>Nattapol Chanpaisit</h2>
+  <p>Nattapol Chanpaisit</p>
 </div>
     </body>
     </html>
