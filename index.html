@@ -24,7 +24,8 @@
                     text-shadow: 2px 2px 2px 2px #705546;
                 color: #d8cba6;}
             #btn1{
-                color : #e8eeef;
+                  
+                  color : #e8eeef;
                   background-color: #632519; 
                   border: none;
                    /* White text */
@@ -32,15 +33,36 @@
                   font-size: 25px; 
                   border-radius: 8px;
             }
-            .fa {
-                 padding: 19px;
-                 font-size: 30px;
-                 width: 40px;
-                 text-align: center;
-                 text-decoration: none;
-                 margin: 5px 2px;
-                border-radius: 8px;
+            
+            .fa{
+                height: 40px;
+                width: 40px;
+                background: rgba(7, 139, 100, 0.4);
+                border-radius: 50%;
+                margin-top: 10px;
+                border-bottom:none;
+                border-left:none;
+                padding: 19px;
                 }
+            .fa:hover{
+                height: 40px;
+                width: 40px;
+                background: rgba(255, 255, 255, 0.4);
+                border-radius: 50%;
+                border-top: 2px solid #011113;
+                border-right: 2px solid transparent;
+                border-bottom:none;
+                border-left:none;
+                animation: spinner5 700ms linear infinite;
+                padding: 19px;
+                }
+
+            @keyframes spinner5 {
+                    to {
+                    transform: rotate(360deg);
+                    }
+                }
+            
             .fa-facebook {
                         background: #632519;
                          color: #e8eeef;
