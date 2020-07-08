@@ -2,22 +2,21 @@
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact Gothic">
     <style>
-        body{
+        header{
             display: flex;
             align-items: center;
             justify-content: center;
+            vertical-align: inherit;
             font-family: "Didact Gothic";
         }
         .home
         {
-            
             color: rgb(8, 74, 77);
             font-size: 30px;
             text-decoration: none;
         }
         .about
         {
-            
             color: rgb(8, 74, 77);
             font-size: 30px;
             text-decoration: none;
@@ -26,6 +25,9 @@
             width:200px;
             margin-left: 200px;
             margin-right: 200px;
+        }
+        @media only screen and (max-width: 768px){
+            .home,.about{font-size: 60px;}
         }
     </style>
 </head>
