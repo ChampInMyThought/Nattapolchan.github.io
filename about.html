@@ -46,7 +46,9 @@ li a:hover {
     text-align:left;
     height:200px;
     float:left;
-    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #left{
     width:78.53%;
@@ -56,6 +58,14 @@ li a:hover {
     height: 200px;
     float:left;
   }
+  @media only screen and (max-width: 830px) {
+  /* For mobile phones: */
+  #side,#left{
+    width: 100%;
+  }
+  #left{height: 300px;}
+
+}
   #main:after {
   clear: both;
   content: "";
@@ -82,7 +92,6 @@ li a:hover {
 .pic {
   height: 200px;
   width: 170px;
-  margin-left: 18px;
   margin-top:0px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
@@ -108,7 +117,18 @@ li a:hover {
   opacity: 1;
   transform:translate(0px,0px);
 }
-  
+@media only screen and (max-width: 830px) {
+  .signature{
+    position: absolute;
+    height:150px;
+    transform: translateY(90px);
+  }
+  #hello{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 </style>
 </head>
 <body>
@@ -117,8 +137,8 @@ li a:hover {
   <li><a href="gallery.html"><b>My gallery</a></b></li>
   <li><a class="disable" href="about.html"><b>About me</b></a></li>
 </ul>
-  <div id="main">
-    <img class="signature" src="signature.png" alt="my signature">
+  <div id="main"><div id="hello">
+    <img class="signature" src="signature.png" alt="my signature"></div>
   <div id="side">
     <img class="pic" src="IMG_0395.jpg" alt="me">
   </div>
