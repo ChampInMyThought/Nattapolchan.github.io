@@ -134,23 +134,48 @@ li a:hover {
     align-items: center;
     justify-content: center;
   }
-  .footer{font-size: 30px;}
+  .footer{font-size: 30px;
+  height:50px;
+  }
 }
 .footer2{
   width: 100vw;
 }
-.dark{
-  width:48.9vw;
+.footer3{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#kvispicture{
+  width:97.8vw;
   object-fit: cover;
 }
-.dark:hover{
-  z-index:-2;
+.win{
+  color: aliceblue;
+  font-size: 40px;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+  background-color: black;
+  border: none;
 }
-.bright{
-  position:relative;
-  z-index:-1;
-  width:48.9vw;
-  object-fit: cover;
+.windark{
+  color: aliceblue;
+  font-size: 40px;
+  background-color: black;
+  border:none;
+}
+.win:hover{
+  background-color: rgb(6, 65, 85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
+}
+.windark:hover{
+  background-color: rgb(6, 65, 85);
+  box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
+}
+.right{
+  display: flex;
+  float: right;
 }
 </style>
 </head>
@@ -159,9 +184,15 @@ li a:hover {
   <li><a class="active" href="index.html"><b>Home</b></a></li>
   <li><a href="gallery.html"><b>My gallery</a></b></li>
   <li><a class="disable" href="about.html"><b>About me</b></a></li>
+  <div class="right">
+  <li><button class="win"onclick="document.getElementById('kvispicture').src='kvis-1.png'">L</button></li>
+  <li><button class="windark"onclick="document.getElementById('kvispicture').src='kvisdark.jpeg'">D</button></li>
+  </div>
 </ul>
-  <div id="main"><div id="hello">
-    <img class="signature" src="signature.png" alt="my signature"></div>
+  <div id="main">
+    <div id="hello">
+    <img class="signature" src="signature.png" alt="my signature">
+    </div>
   <div id="side">
     <img class="pic" src="IMG_0395.jpg" alt="me">
   </div>
@@ -179,8 +210,7 @@ li a:hover {
   <p>- Nattapol Chanpaisit -</p>
 </div>
   <div class="footer2">
-    <img class="dark" src="kvisdark.jpeg">
-    <img class="bright" src="kvis-1.png">
+    <img id="kvispicture" src="kvisdark.jpeg">
   </div>
 </body>
 </html>
