@@ -7,6 +7,15 @@
                   font-family:"Didact Gothic";
                   background-attachment:fixed;
             }
+            .t1:hover,.t2:hover,.t3:hover,.t4:hover,.t5:hover,.t6:hover,.t7:hover,.t8:hover,.t9:hover,.t10:hover,.t11:hover,.t12:hover,.t13:hover,.t14:hover{
+                animation: hoverr 300ms linear infinite;
+                
+            }
+            @keyframes hoverr{
+                to{
+                transform:translateY(2px);
+                }
+            }
             #btn1:hover , .fa-facebook:hover , .fa-twitter:hover , .fa-instagram:hover{
                     background-color: #e8eeef;
                     color: black;
@@ -76,7 +85,7 @@
                         background: #0f554d;
                           color: white;
                         }
-            h {color:green;}
+            
             #career{font-family:"Caveat Brush";}
             #white {color:lavender;}
             .blue {color:midnightblue;}

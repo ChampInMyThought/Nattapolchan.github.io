@@ -16,6 +16,7 @@ ul {
   overflow: hidden;
   background-color: black;
   overflow: hidden;
+  object-fit: none;
 }
 li {
   float: left;
@@ -42,7 +43,22 @@ li a:hover {
   #side{
     width:21.47%;
     color:#f6ede4;
-    background-image: url("scenery.jpeg") ;
+    background-color: #2c1d44;
+    /* background: linear-gradient(to bottom left, #d3af45 0%, #3ac475 100%); */
+    background-size: 100%;
+    opacity: 0.8;
+    border: #111;
+    text-align:left;
+    height:200px;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #sidedark{
+    width:21.47%;
+    color:#f6ede4;
+    background: linear-gradient(to bottom left, #000157 0%, #000000 100%);
     background-size: 100%;
     opacity: 0.8;
     border: #111;
@@ -56,7 +72,7 @@ li a:hover {
   #left{
     width:78.53%;
     color:#f6ede4;
-    background-color:#8e9ca5;
+    background-color:#2c1d44;
     padding: 10px;
     height: 200px;
     float:left;
@@ -92,7 +108,7 @@ li a:hover {
   padding: 10px;
   font-size: 50px;
   text-align: center;
-  background-color:#af7235;
+  background-color:#000000;
   width:100%;
 }
   
@@ -122,7 +138,6 @@ li a:hover {
   margin-top: 10px;
   position:absolute;
   opacity: 1;
-  transform:translate(0px,0px);
 }
 @media only screen and (max-width: 830px) {
   .signature{
@@ -184,13 +199,29 @@ li a:hover {
 </style>
 </head>
 <body>
+  <script>
+    function lightmode(){
+      alert('This is light mode');
+      document.getElementById('kvispicture').src='kvis-1.png';
+      let elem = document.getElementById("side");
+      elem.style.backgroundColor="lightGray";
+      document.getElementsByClassName('footer')[0].style.backgroundColor="white";
+    }
+    function darkmode(){
+      alert('This is dark mode');
+      let elem = document.getElementById("side");
+      elem.style.backgroundColor="#2c1d44";
+      document.getElementsByClassName('footer')[0].style.backgroundColor="black";
+      document.getElementById('kvispicture').src='kvisdark.jpeg'
+    }
+  </script>
 <ul>
   <li><a class="active" href="index.html"><b>Home</b></a></li>
   <li><a href="gallery.html"><b>My gallery</a></b></li>
   <li><a class="disable" href="about.html"><b>About me</b></a></li>
   <div class="right">
-  <li><button class="win"onclick="document.getElementById('kvispicture').src='kvis-1.png'">L</button></li>
-  <li><button class="windark"onclick="document.getElementById('kvispicture').src='kvisdark.jpeg'">D</button></li>
+  <li><button class="win"onclick="lightmode()">L</button></li>
+  <li><button class="windark"onclick="darkmode()">D</button></li>
   </div>
 </ul>
   <div id="main">
