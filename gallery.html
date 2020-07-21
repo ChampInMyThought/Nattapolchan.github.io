@@ -6,32 +6,38 @@
         *{
             box-sizing:border-box;
         }
+        body{
+            background-color: #aad0d4;
+        }
         header{
             display: flex;
             align-items: center;
             justify-content: center;
             vertical-align: inherit;
             font-family: "Didact Gothic";
-            box-shadow:0px 4px rgb(232, 255, 29) ;
-            background-color: black;
+            box-shadow:0px 4px #f77532 ;
+            background-color: #2a8a92;
+            color: #e7e4de;
         }
         .home
         {
             color:white;
             font-size: 30px;
             text-decoration: none;
+            transform: translateX(7vw);
         }
         .about
         {
             color: white;
             font-size: 30px;
             text-decoration: none;
+            transform: translateX(2vw);
         }
         .signature{
             width:200px;
             margin-left: 200px;
             margin-right: 200px;
-            transform: translateX(2vw);
+            transform: translateX(5vw);
         }
         @media only screen and (max-width: 768px){
             .home,.about{font-size: 20px;}
@@ -69,13 +75,60 @@
     .middle1:hover , .middle:hover{
         box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
     }
+    .drklgt{
+        display: flex;
+        float: right;
+        position:static;
+        transform: translateX(17vw);
+    }
+    #icon{
+        height: 30px;
+    }
+    #lightmode{
+        border: none;
+        background-color: #2a8a92;
+    }
     </style>
+    <script>
+        var countt=0;
+        function darkmode(){
+            document.getElementById("bod").style.backgroundColor="#aad0d4";
+            document.getElementById("headdd").style.backgroundColor='#2a8a92';
+            document.getElementsByClassName("home")[0].style.color="#e7e4de";
+            document.getElementsByClassName("about")[0].style.color="#e7e4de";
+            document.getElementById("headdd").style.boxShadow="0px 4px #f77532 ";
+            document.getElementById("lightmode").style.backgroundColor="#2a8a92"
+            document.getElementById("icon").src="moon_dark_mode_night-2-512.png";
+            countt=0;
+        }
+        function lightmode(){
+            document.getElementById("bod").style.backgroundColor="#393232"
+            document.getElementById("headdd").style.backgroundColor='black';
+            document.getElementsByClassName("home")[0].style.color="#ed8d8d";
+            document.getElementsByClassName("about")[0].style.color="#ed8d8d";
+            document.getElementById("headdd").style.boxShadow="0px 4px #8d6262";
+            document.getElementById("lightmode").style.backgroundColor="black";
+            console.log(document.getElementById("icon").src="sun_light_mode_day-512.png");
+            countt+=1;
+        }
+        function activate(){
+            if(countt==0){
+                lightmode();
+            }
+            else{
+                darkmode();
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
+<body id="bod">
+    <header id="headdd">
         <a class="home" href="index.html">Home</a></div>
         <img class="signature" src="signature.png" alt="my signature">
         <a class="about" href="about.html">About me</a>
+        <div class="drklgt">
+            <button id="lightmode" onclick="activate()"><img id="icon" src="moon_dark_mode_night-2-512.png"></h></button>
+        </div>
     </header>
     <div class="gal">
         <div class="iii">
