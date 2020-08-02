@@ -201,14 +201,12 @@ li a:hover {
 <body>
   <script>
     function lightmode(){
-      alert('This is light mode');
       document.getElementById('kvispicture').src='kvis-1.png';
       let elem = document.getElementById("side");
       elem.style.backgroundColor="lightGray";
       document.getElementsByClassName('footer')[0].style.backgroundColor="white";
     }
     function darkmode(){
-      alert('This is dark mode');
       let elem = document.getElementById("side");
       elem.style.backgroundColor="#2c1d44";
       document.getElementsByClassName('footer')[0].style.backgroundColor="black";
