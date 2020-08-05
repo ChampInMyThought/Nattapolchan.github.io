@@ -37,8 +37,8 @@ li a:hover {
 }
 .disable{
     cursor: not-allowed;
-    background-color: #61484b;
-    color:#b8a488;
+    background-color: #05726d;
+    color:#ffffff;
 }
   #side{
     width:21.47%;
@@ -198,25 +198,23 @@ li a:hover {
 }
 </style>
 </head>
-<body>
+<body onload="lightmode()">
   <script>
     function lightmode(){
       document.getElementById('kvispicture').src='kvis-1.png';
-      let elem = document.getElementById("side");
-      elem.style.backgroundColor="lightGray";
-      elem.style.textDecorationColor="black";
-      document.getElementsByClassName('footer')[0].style.backgroundColor="white";
-      document.getElementsByClassName('myna')[0].style.textDecorationColor='black';
-      let hii = document.getElementById("left");
-      hii.style.backgroundColor="pink";
+      document.getElementById('side').style.backgroundColor='#0e1821';
+      document.getElementById('left').style.backgroundColor='#798f8c';
+      document.getElementById('left').style.textDecorationColor='#798f8c';
+      document.getElementsByClassName('footer')[0].style.backgroundColor='#d89120';
+      document.getElementsByClassName('myna')[0].style.textDecorationColor='#44535e';
     }
     function darkmode(){
-      document.getElementById('kvispicture').src='kvisdark1.jpeg';
+      document.getElementById('kvispicture').src='kvisdark1.jpg';
+      document.getElementById('side').style.backgroundColor='#798f8c';
+      document.getElementById('left').style.backgroundColor='#0e1821';
+      document.getElementById('left').style.textDecorationColor='#798f8c';
       document.getElementsByClassName('footer')[0].style.backgroundColor='black';
-      document.getElementById('side').style.backgroundColor='white';
-      document.getElementById('side').style.textDecorationColor='black';
-      document.getElementById('left').style.backgroundColor='#6a4162';
-      document.getElementsByClassName('myna')[0].style.textDecorationColor='#f39db6';
+      document.getElementsByClassName('myna')[0].style.textDecorationColor='#44535e';
     }
   </script>
 <ul>
