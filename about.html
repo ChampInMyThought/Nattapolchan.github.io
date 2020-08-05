@@ -204,19 +204,26 @@ li a:hover {
       document.getElementById('kvispicture').src='kvis-1.png';
       let elem = document.getElementById("side");
       elem.style.backgroundColor="lightGray";
+      elem.style.textDecorationColor="black";
       document.getElementsByClassName('footer')[0].style.backgroundColor="white";
+      document.getElementsByClassName('myna')[0].style.textDecorationColor='black';
+      let hii = document.getElementById("left");
+      hii.style.backgroundColor="pink";
     }
     function darkmode(){
-      let elem = document.getElementById("side");
-      elem.style.backgroundColor="#2c1d44";
-      document.getElementsByClassName('footer')[0].style.backgroundColor="black";
-      document.getElementById('kvispicture').src='kvisdark.jpeg'
+      document.getElementById('kvispicture').src='kvisdark1.jpeg';
+      document.getElementsByClassName('footer')[0].style.backgroundColor='black';
+      document.getElementById('side').style.backgroundColor='white';
+      document.getElementById('side').style.textDecorationColor='black';
+      document.getElementById('left').style.backgroundColor='#6a4162';
+      document.getElementsByClassName('myna')[0].style.textDecorationColor='#f39db6';
     }
   </script>
 <ul>
   <li><a class="active" href="index.html"><b>Home</b></a></li>
   <li><a href="gallery.html"><b>My gallery</a></b></li>
   <li><a class="disable" href="about.html"><b>About me</b></a></li>
+  <li><a class="disable" href="GuitarRecord.html"></a></li>
   <div class="right">
   <li><button class="win"onclick="lightmode()">L</button></li>
   <li><button class="windark"onclick="darkmode()">D</button></li>
@@ -232,15 +239,13 @@ li a:hover {
   <div id="left">
        <h class="name">
       <br><b>
-      Hey!I'm Nattapol, currently in 11 grade
-      at KVIS. I am interested in physics and hate biology.
-      Please don't hate me, I'm a nice guy.
+      dAA-dee-duh-dii-doo-dio-dee-dui-daa-daa-daa-dii-dui
     </b>
     </h>
     </div>
   </div>
     <div class="footer">
-  <p>- Nattapol Chanpaisit -</p>
+  <p class="myna">- Nattapol Chanpaisit -</p>
 </div>
   <div class="footer2">
     <img id="kvispicture" src="kvisdark.jpeg">
