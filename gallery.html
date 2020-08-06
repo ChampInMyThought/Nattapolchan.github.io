@@ -92,22 +92,22 @@
     <script>
         var countt=0;
         function darkmode(){
-            document.getElementById("bod").style.backgroundColor="#aad0d4";
-            document.getElementById("headdd").style.backgroundColor='#83f367 ';
-            document.getElementsByClassName("home")[0].style.color="black";
-            document.getElementsByClassName("about")[0].style.color="black";
-            document.getElementById("headdd").style.boxShadow="0px 4px  #2a8a92 ";
-            document.getElementById("lightmode").style.backgroundColor="#83f367"
+            document.getElementById("bod").style.backgroundColor="#bbf1c8";
+            document.getElementById("headdd").style.backgroundColor='#342b38 ';
+            document.getElementsByClassName("home")[0].style.color="#ff9595";
+            document.getElementsByClassName("about")[0].style.color="#ff9595";
+            document.getElementById("headdd").style.boxShadow="0px 4px  #80bdab ";
+            document.getElementById("lightmode").style.backgroundColor="#342b38"
             document.getElementById("icon").src="moon_dark_mode_night-2-512.png";
             countt=0;
         }
         function lightmode(){
-            document.getElementById("bod").style.backgroundColor="#393232"
-            document.getElementById("headdd").style.backgroundColor='black';
-            document.getElementsByClassName("home")[0].style.color="#ed8d8d";
-            document.getElementsByClassName("about")[0].style.color="#ed8d8d";
-            document.getElementById("headdd").style.boxShadow="0px 4px #8d6262";
-            document.getElementById("lightmode").style.backgroundColor="black";
+            document.getElementById("bod").style.backgroundColor="#eeeeee";
+            document.getElementById("headdd").style.backgroundColor='#222831';
+            document.getElementsByClassName("home")[0].style.color="#32e0c4";
+            document.getElementsByClassName("about")[0].style.color="#32e0c4";
+            document.getElementById("headdd").style.boxShadow="0px 4px #cf7500";
+            document.getElementById("lightmode").style.backgroundColor="#222831";
             console.log(document.getElementById("icon").src="sun_light_mode_day-512.png");
             countt+=1;
         }
@@ -121,7 +121,7 @@
         }
     </script>
 </head>
-<body id="bod">
+<body id="bod" onload="activate()">
     <header id="headdd">
         <a class="home" href="index.html">Home</a></div>
         <img class="signature" src="signature.png" alt="my signature">
@@ -142,8 +142,5 @@
            <img class="middle" src="kvisdark1.jpg">
            <img class="middle" src="kvis-1.png">
         </div>
-    </div>
-    <div id="footer">
-        <button id="boo" href="newpage.html"></button>
     </div>
 </body>
