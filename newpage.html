@@ -4,9 +4,19 @@
 </title>
 <head>
     <script>
-        var movexto,movexfrom,moveyto,moveyfrom;
-        var board;
-        function movePawn(movexfrom,movexto,moveyfrom,moveyto){
-        }
+        /*function tilt(){
+            document.getElementById("Ipad").style.transform = "rotate(7deg)";
+        }*/
     </script>
+    <style>
+        #Ipad:hover{
+            animation-name: "tilt";
+            animation-duration: 300ms;
+        }
+        @keyframes tilt{
+            to{
+                transform: rotate('40deg');
+            }
+        }
+    </style>
 </head>
