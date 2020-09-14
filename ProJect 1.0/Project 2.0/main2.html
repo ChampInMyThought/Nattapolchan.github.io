@@ -28,11 +28,11 @@
             vertical-align: middle;
             font-size: 40px;
             border: 10px solid transparent;
-            -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-            -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-            border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+            -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #c01378 100%);
+            -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #c01378 100%);
+            border-image: linear-gradient(to bottom, #3acfd5 0%, #c01378 100%);
             border-image-slice: 1;
-            
+            transform: translateX(-100px);
             z-index: 200;
         }
         #setposition{
@@ -57,12 +57,15 @@
             transform: translateY(-250px);
             z-index: -1;
         }
+        #check{
+            background-color: crimson;
+        }
     </style>
     <body>
         <div class="container">
             <div class="row justify-content-between" id="setheight">
-                <div class="col-auto order-2">
-                    
+                <div class="col-auto order-2" id="check">
+                    <h6>MERCH!!</h6>
                 </div>
                 <div class="col-6 order-1" id="padd1" >
                     <img id="setposition" src="sigg.svg">
