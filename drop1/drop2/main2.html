@@ -54,16 +54,51 @@
         }
         .pine{
             width: 98.7vw;
-            transform: translateY(-250px);
+            transform: translateY(-400px);
             z-index: -1;
         }
-        
+        #check{
+            color:white;
+            transform: translateX(270px);
+            z-index: 300;
+            
+        }
+        #sett{
+            z-index: 250;
+        }
+        h6{
+            transform: translateY(60px);
+            font-size: 30px;
+        }
+        h5{
+            transform: translateY(60px);
+            font-size: 30px;
+        }
+        #blue{
+            background-color: darkgreen;
+        }
+        #red{
+            background-color: darkgrey;
+        }
+        .shiftup{
+            transform: translateY(-350px);
+        }
+        .bi{
+            display: inline-block;
+            background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+            background-repeat: no-repeat;
+            background-size: 1rem 1rem;
+        }
     </style>
     <body>
         <div class="container">
             <div class="row justify-content-between" id="setheight">
-                <div class="col-auto order-2" id="check">
+                <div class="col order-2" id="check">
                     <h6>MERCH!!</h6>
+                    <h5>Available now at ____</h5>
+                    <div class="bi">
+                        
+                    </div>
                 </div>
                 <div class="col-6 order-1" id="padd1" >
                     <img id="setposition" src="sigg.svg">
@@ -85,11 +120,27 @@
                                 </h4>
                             </div>
                         </div>  
-              </div>               
+                </div>               
             </div>
         </div>
-        
             <img src="pine.JPG" class="pine">
-        
+    <div class="shiftup">
+        <div class="row" id="pseudofooter">
+            <div class="col order-1" id="blue">
+                
+            </div>
+            <div class="col order-2" id="red">
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="reactpage.html">Clickme</a>
+    </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="like_button.js"></script>
+    
+
     </body>
 </html>
