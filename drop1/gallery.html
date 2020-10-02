@@ -119,6 +119,8 @@
                 darkmode();
             }
         }
+        
+        
     </script>
 </head>
 <body id="bod" onload="activate()">
@@ -130,17 +132,71 @@
             <button id="lightmode" onclick="activate()"><img id="icon" src="picture/moon_dark_mode_night-2-512.png"></h></button>
         </div>
     </header>
+    <div id="fullImg" style="display: none;">
+        <img id="theFullImg">
+
+    </div>
     <div class="gal">
         <div class="iii">
-            <img class="middle1" src="picture/vec.jpg">
+            <img id="img1" class="middle1" src="picture/vec.jpg">
         </div>
         <div class="jjj">
-            <img class="middle" src="picture/bestcoconut.jpg">
-            <img class="middle" src="picture/inthewoods.jpeg">
+            <img id="img2" class="middle" src="picture/bestcoconut.jpg">
+            <img id="img3" class="middle" src="picture/inthewoods.jpeg">
         </div>
         <div class="kkk">
-           <img class="middle" src="picture/kvisdark1.jpg">
-           <img class="middle" src="picture/kvis-1.png">
+           <img id="img4"class="middle" src="picture/kvisdark1.jpg">
+           <img id="img5"class="middle" src="picture/kvis-1.png">
         </div>
     </div>
+
+
+    <style>
+        #fullImg{
+            width: 100vw;
+            height: 100vh;
+            position:absolute;
+            max-width: 100%;
+            z-index: 3;
+            background-color: rgba(0, 0,0, 0.3);
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        #theFullImg{
+            margin-top: 20px;
+            max-width: 80vw;
+            max-height: 80vh;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <script>
+        window.onload = function(){
+            console.log('loaded');
+
+            document.getElementById('fullImg').onclick = function(e){
+                document.getElementById('fullImg').style.display = 'none'
+            }
+
+            let imgIdList = ["img1","img2","img3","img4","img5"];
+            let source = {
+                "img1":"picture/vec.jpg",
+                "img2":"picture/bestcoconut.jpg",
+                "img3":"picture/inthewoods.jpeg",
+                "img4":"picture/kvisdark1.jpg",
+                "img5":"picture/kvis-1.png",
+            }
+            imgIdList.forEach((id)=>{
+                console.log(id);
+                document.getElementById(id).onclick = function(e){
+                    document.getElementById('fullImg').style.display = 'block'
+                    document.getElementById('theFullImg').src = source[id];
+                }
+            });
+        }
+    </script>
 </body>
