@@ -1,253 +1,262 @@
 <!DOCTYPE html>
 <html>
-<title>Nattapol</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya Sans SC">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Devonshire">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  *{
-    box-sizing:border-box;
-  }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: black;
-  overflow: hidden;
-  object-fit: none;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  font-family:"Alegreya Sans SC";
-  font-size:20px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+  <title>Nattapol</title>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Alegreya Sans SC"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Devonshire"
+  />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-li a:hover {
-  background-color: #111;
-  box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
-}
-.disable{
-    cursor: not-allowed;
-    background-color: #05726d;
-    color:#ffffff;
-}
-  #side{
-    width:21.47%;
-    color:#f6ede4;
-    background-color: #2c1d44;
-    /* background: linear-gradient(to bottom left, #d3af45 0%, #3ac475 100%); */
-    background-size: 100%;
-    opacity: 0.8;
-    border: #111;
-    text-align:left;
-    height:200px;
-    float:left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #sidedark{
-    width:21.47%;
-    color:#f6ede4;
-    background: linear-gradient(to bottom left, #000157 0%, #000000 100%);
-    background-size: 100%;
-    opacity: 0.8;
-    border: #111;
-    text-align:left;
-    height:200px;
-    float:left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #left{
-    width:78.53%;
-    color:#f6ede4;
-    background-color:#2c1d44;
-    padding: 10px;
-    height: 200px;
-    float:left;
-    position:relative;
-    z-index:9999;
-  }
-  @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  #side,#left{
-    width: 100%;
-  }
-  #left{height: 370px;
-  border-top: 20px solid black;
-  border-bottom: 20px solid black;}
-}
-  #main:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-   .name{
-     font-family:"Alegreya Sans SC";
-     color: #eceadc;
-     font-size: 30px;
-     overflow: scroll;
-  
-    }
-    p{
-      font-family:"Devonshire";
-      color:#f7c686;
-    }
-    .footer {
-  padding: 10px;
-  font-size: 50px;
-  text-align: center;
-  background-color:#000000;
-  width:100%;
-}
-  
-.pic {
-  height: 200px;
-  width: 170px;
-  margin-top:0px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.4);
-  border-top-color: rgb(197, 7, 86);
-  border-bottom-color: rgb(197, 7, 86);
-  animation: spinner3 2s ease infinite;
-}
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        overflow: hidden;
+        object-fit: none;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        font-family: "Alegreya Sans SC";
+        font-size: 20px;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-@keyframes spinner3 {
-    50% {opacity: 0;}
-    100% 
-    {
-      opacity:1;
-      transform: rotate(360deg);
-    }
-}
-.signature
-{
-  height: 180px;
-  margin-top: 10px;
-  position:absolute;
-  opacity: 1;
-}
-@media only screen and (max-width: 830px) {
-  .signature{
-    position: absolute;
-    height:150px;
-    transform: translateY(90px);
-  }
-  #hello{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer{font-size: 30px;
-  height:50px;
-  }
-}
-.footer2{
-  width: 100vw;
-}
-.footer3{
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#kvispicture{
-  width:97.8vw;
-  object-fit: cover;
-}
-.win{
-  color: aliceblue;
-  font-size: 40px;
-  padding-left: 0.7vw;
-  padding-right: 0.7vw;
-  background-color: black;
-  border: none;
-  margin-top: 1px;
-}
-.windark{
-  color: aliceblue;
-  font-size: 40px;
-  background-color: black;
-  margin-top: 1px;
-  border:none;
-}
-.win:hover{
-  background-color: rgb(6, 65, 85);
-  box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
-}
-.windark:hover{
-  background-color: rgb(6, 65, 85);
-  box-shadow: 0 4px 8px 0 rgba(0, 0,0, 0.8);
-}
-.right{
-  display: flex;
-  float: right;
-  overflow: hidden;
-}
+      li a:hover {
+        background-color: #111;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+      }
+      .disable {
+        cursor: not-allowed;
+        background-color: #05726d;
+        color: #ffffff;
+      }
+      #side {
+        width: 21.47%;
+        color: #f6ede4;
+        background-color: #2c1d44;
+        /* background: linear-gradient(to bottom left, #d3af45 0%, #3ac475 100%); */
+        background-size: 100%;
+        opacity: 0.8;
+        border: #111;
+        text-align: left;
+        height: 200px;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #sidedark {
+        width: 21.47%;
+        color: #f6ede4;
+        background: linear-gradient(to bottom left, #000157 0%, #000000 100%);
+        background-size: 100%;
+        opacity: 0.8;
+        border: #111;
+        text-align: left;
+        height: 200px;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #left {
+        width: 78.53%;
+        color: #f6ede4;
+        background-color: #2c1d44;
+        padding: 10px;
+        height: 200px;
+        float: left;
+        position: relative;
+        z-index: 9999;
+      }
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        #side,
+        #left {
+          width: 100%;
+        }
+        #left {
+          height: 370px;
+          border-top: 20px solid black;
+          border-bottom: 20px solid black;
+        }
+      }
+      #main:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      .name {
+        font-family: "Alegreya Sans SC";
+        color: #eceadc;
+        font-size: 30px;
+        overflow: scroll;
+      }
+      p {
+        font-family: "Devonshire";
+        color: #f7c686;
+      }
+      .footer {
+        padding: 10px;
+        font-size: 50px;
+        text-align: center;
+        background-color: #000000;
+        width: 100%;
+      }
 
-</style>
-</head>
-<body onload="lightmode()">
-  <script>
-    function lightmode(){
-      document.getElementById('kvispicture').src='picture/kvis-1.png';
-      document.getElementById('side').style.backgroundColor='#0e1821';
-      document.getElementById('left').style.backgroundColor='#798f8c';
-      document.getElementById('left').style.textDecorationColor='#798f8c';
-      document.getElementsByClassName('footer')[0].style.backgroundColor='#d89120';
-      document.getElementsByClassName('myna')[0].style.textDecorationColor='#44535e';
-    }
-    function darkmode(){
-      document.getElementById('kvispicture').src='picture/kvisdark1.jpg';
-      document.getElementById('side').style.backgroundColor='#798f8c';
-      document.getElementById('left').style.backgroundColor='#0e1821';
-      document.getElementById('left').style.textDecorationColor='#798f8c';
-      document.getElementsByClassName('footer')[0].style.backgroundColor='black';
-      document.getElementsByClassName('myna')[0].style.textDecorationColor='#44535e';
-    }
-  </script>
-<ul>
-  <li><a class="active" href="main1.html">Home</a></li>
-  <li><a href="gallery.html">My gallery</a></li>
-  <li><a class="disable" href="about.html">About me</a></li>
-  <li><a class="farright" href="GuitarRecord.html">Guitar</a></li>
-  <div class="right">
-  <li><button class="win"onclick="lightmode()">L</button></li>
-  <li><button class="windark"onclick="darkmode()">D</button></li>
-  </div>
-</ul>
-  <div id="main">
-    <div id="hello">
-    <img class="signature" src="picture/signature.png" alt="my signature">
+      .pic {
+        height: 200px;
+        width: 170px;
+        margin-top: 0px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.4);
+        border-top-color: rgb(197, 7, 86);
+        border-bottom-color: rgb(197, 7, 86);
+        animation: spinner3 2s ease infinite;
+      }
+
+      @keyframes spinner3 {
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+          transform: rotate(360deg);
+        }
+      }
+      .signature {
+        height: 180px;
+        margin-top: 10px;
+        position: absolute;
+        opacity: 1;
+      }
+      @media only screen and (max-width: 830px) {
+        .signature {
+          position: absolute;
+          height: 150px;
+          transform: translateY(90px);
+        }
+        #hello {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .footer {
+          font-size: 30px;
+          height: 50px;
+        }
+      }
+      .footer2 {
+        width: 100vw;
+      }
+      .footer3 {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #kvispicture {
+        width: 97.8vw;
+        object-fit: cover;
+      }
+      .win {
+        color: aliceblue;
+        font-size: 40px;
+        padding-left: 0.7vw;
+        padding-right: 0.7vw;
+        background-color: black;
+        border: none;
+        margin-top: 1px;
+      }
+      .windark {
+        color: aliceblue;
+        font-size: 40px;
+        background-color: black;
+        margin-top: 1px;
+        border: none;
+      }
+      .win:hover {
+        background-color: rgb(6, 65, 85);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+      }
+      .windark:hover {
+        background-color: rgb(6, 65, 85);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+      }
+      .right {
+        display: flex;
+        float: right;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body onload="lightmode()">
+    <script>
+      function lightmode() {
+        document.getElementById("kvispicture").src = "picture/kvis-1.png";
+        document.getElementById("side").style.backgroundColor = "#0e1821";
+        document.getElementById("left").style.backgroundColor = "#798f8c";
+        document.getElementById("left").style.textDecorationColor = "#798f8c";
+        document.getElementsByClassName("footer")[0].style.backgroundColor =
+          "#d89120";
+        document.getElementsByClassName("myna")[0].style.textDecorationColor =
+          "#44535e";
+      }
+      function darkmode() {
+        document.getElementById("kvispicture").src = "picture/kvisdark1.jpg";
+        document.getElementById("side").style.backgroundColor = "#798f8c";
+        document.getElementById("left").style.backgroundColor = "#0e1821";
+        document.getElementById("left").style.textDecorationColor = "#798f8c";
+        document.getElementsByClassName("footer")[0].style.backgroundColor =
+          "black";
+        document.getElementsByClassName("myna")[0].style.textDecorationColor =
+          "#44535e";
+      }
+    </script>
+    <ul>
+      <li><a class="active" href="main1.html">Home</a></li>
+      <li><a href="gallery.html">My gallery</a></li>
+      <li><a class="disable" href="about.html">About me</a></li>
+      <li><a class="farright" href="GuitarRecord.html">Guitar</a></li>
+      <div class="right">
+        <li><button class="win" onclick="lightmode()">L</button></li>
+        <li><button class="windark" onclick="darkmode()">D</button></li>
+      </div>
+    </ul>
+    <div id="main">
+      <div id="hello">
+        <img class="signature" src="picture/signature.png" alt="my signature" />
+      </div>
+      <div id="side">
+        <img class="pic" src="picture/IMG_0395.jpg" alt="me" />
+      </div>
+      <div id="left">
+        <h class="name"> <br /><b> D </b> </h>
+      </div>
     </div>
-  <div id="side">
-    <img class="pic" src="picture/IMG_0395.jpg" alt="me">
-  </div>
-  <div id="left">
-       <h class="name">
-      <br><b>
-      D
-    </b>
-    </h>
-    </div>
-  </div>
     <div class="footer">
-  <p class="myna">- Nattapol Chanpaisit -</p>
-</div>
-  <div class="footer2">
-    <img id="kvispicture" src="picture/kvisdark.jpeg">
-  </div>
-</body>
+      <p class="myna">- Nattapol Chanpaisit -</p>
+    </div>
+    <div class="footer2">
+      <img id="kvispicture" src="picture/kvisdark.jpeg" />
+    </div>
+  </body>
 </html>
