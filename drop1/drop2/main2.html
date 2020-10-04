@@ -6,6 +6,8 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -37,7 +39,9 @@
     #padd1 {
       background-color: rgb(0, 0, 0);
       margin-top: 70px;
-      height: 320px;
+      width: 30%;
+      max-width: 30%;
+      height: auto;
       color: white;
       text-align: center;
       vertical-align: middle;
@@ -51,17 +55,13 @@
       );
       border-image: linear-gradient(to bottom, #3acfd5 0%, #c01378 100%);
       border-image-slice: 1;
-      transform: translateX(-100px);
       z-index: 200;
+      position: relative;
     }
     #setposition {
       height: 60px;
     }
-    #button {
-      background-color: #000000;
-      border: 2px solid rgb(255, 255, 255);
-      margin: 10px 10px 10px 10px;
-    }
+
     #offset {
       margin-top: 20px;
     }
@@ -73,13 +73,7 @@
     }
     .pine {
       width: 98.7vw;
-      transform: translateY(-400px);
       z-index: -1;
-    }
-    #check {
-      color: white;
-      transform: translateX(270px);
-      z-index: 300;
     }
     #sett {
       z-index: 250;
@@ -98,49 +92,118 @@
     #red {
       background-color: darkgrey;
     }
-    .shiftup {
-      transform: translateY(-350px);
-    }
-    .bi {
-      display: inline-block;
-      background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
-      background-repeat: no-repeat;
-      background-size: 1rem 1rem;
-    }
     .can-click {
       cursor: pointer;
     }
+    .hom {
+        margin-top: 10vh;
+        margin-left: 10vw;
+    }
+    .navbar{
+        height: 10vh;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 0px 0.5px white;
+        color: white;
+    }
+    .navbar-logo img{
+        height: 60px;
+        position: fixed;
+        transform: translateY(-4.5vh);
+    }
+    .navbar h1{
+        color: rgb(255, 255, 255);
+        margin-left: 2vw;
+    }
+    .nav-item{
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: white;
+    }
+    .nav-link{
+        color: white;
+    }
+    .navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link:hover{
+        color: rgb(78, 6, 88);
+    }
+    .navbar-toggler{
+        color: white;
+    }
+    #blue{
+        height: 200px;
+        
+    }
+    .fa{
+        color: white;
+        font-size: 50px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        
+    }
+    .fa:hover{
+        color: rgb(78, 6, 88);
+        text-decoration: none;
+    }
+    #pseudofooter{
+        background-color: black;
+        height: 10vh;
+        box-shadow: 0.5px 0px 0px 0px white;
+    }
+    
   </style>
-  <body>
-    <div class="container">
-      <div class="row justify-content-between" id="setheight">
-        <div class="col order-2" id="check">
-          <h6>MERCH!!</h6>
-          <h5>Available now at ____</h5>
-          <div class="bi"></div>
+  <body data-spy="scroll" data-target="#navbarRS">
+    <nav class="navbar navbar-expand-md fixed-top" data-aos="fade-down">
+        <a class="navbar-logo" href="main2.html"><img src="sigg.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRS">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarRS">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="main2.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="col-6 order-1" id="padd1">
-          <img id="setposition" src="sigg.svg" />
-          <h1><b>Welcome</b></h1>
+    </nav>  
+    <div class=hom> 
+      <div class="row justify-content-between" id="setheight">
+        <div class="col-6 order-1" id="padd1" data-aos="fade-right">
+          <img id="setposition" src="sigg.svg" data-aos="zoom-out"/>
+          <h1><b>Lorem</b></h1>
           <div class="row justify-content-center" id="offset">
             <div class="col-auto order-2" id="button">
-              <h4 class="can-click">Choose your template</h4>
+              <h4 class="can-click">Lorem ipsum dolor sit.</h4>
             </div>
             <div class="col-auto order-1" id="button">
-              <h4 class="can-click">Make your own website</h4>
+              <h4 class="can-click">Lorem, ipsum.</h4>
             </div>
             <div class="col-auto order-3" id="button">
-              <h4 class="can-click">Start now</h4>
+              <h4 class="can-click">Lorem ipsum.</h4>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <img src="pine.JPG" class="pine" />
+    <img src="pine.JPG" class="pine" data-aos="zoom-in"/>
     <div class="shiftup">
-      <div class="row" id="pseudofooter">
-        <div class="col order-1" id="blue"></div>
-        <div class="col order-2" id="red"></div>
+      <div class="row justify-content-center align-items-center fixed-bottom" id="pseudofooter">
+        
+            <a href="#" class="fa fa-github"></a>
+        
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+        
+            <a href="https://www.instagram.com/l7c_chan/" class="fa fa-instagram"></a>
+        
+
       </div>
     </div>
     <div>
@@ -154,6 +217,15 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
       crossorigin
     ></script>
-    <script src="like_button.js"></script>
+    <script 
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+    <script>
+        AOS.init({
+            delay: 0,
+            duration: 1500,
+            once: false
+        })
+    </script>
   </body>
 </html>

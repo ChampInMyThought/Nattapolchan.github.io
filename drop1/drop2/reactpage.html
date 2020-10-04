@@ -4,6 +4,8 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Heebo">
     <link rel="stylesheet" href="react.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 </head>
 <body>
     <main>
@@ -11,30 +13,59 @@
             <h3 id="contenn"></h3>
         </section>
     </main>
-
             <div class="intro">
                 <div class="intro-text">
                     <h1 id="welcometext" class="hide">
-                        <span class="text">High</span>
+                        <span class="text">MY</span>
                     </h1>
                     <h1 id="welcometext" class="hide">
-                        <span class="text">as</span>
+                        <span class="text">GALLERY</span>
                     </h1>
                     <h1 id="welcometext" class="hide">
-                        <span class="text">always</span>
+                        <span class="text">-.-</span>
                     </h1>
                 </div>
             </div>
 
     <div class="slider">
         <div class="slidercover" height="100vh">
-            <p class="introword">Another intro</p>
+            <p class="introword" object-fit="cover">ALL VECTORS</p>
         </div>
-        <div class="maincontent" height="100vh">
-            <p>B</p>
+        <div class="maincontent">
+            <div class="wrapper">
+                <div class="imgcover">
+                    <img src="pine.JPG" alt="loading...">
+                </div>
+                <div class="imgcover">
+                    <img src="sigg.svg" alt="loading...">
+                </div>
+                <div class="imgcover">
+                    <img src="kvisdark1.jpg" alt="loading...">
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="left">
+                    <div id="root">
+
+                    </div>
+                   <!-- <script>
+                        const [counter,setCounter] = useState(0);
+                        ReactDOM.render(
+                            <button onClick={() => setCounter(counter+1)}>Click</button>
+                            <p>check</p>,
+                            document.getElementById('root')
+                        );
+                    </script>-->
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="react.js"></script>
 </body>
 </html>

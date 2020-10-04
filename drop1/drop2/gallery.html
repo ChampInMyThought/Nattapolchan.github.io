@@ -48,8 +48,8 @@
     }
     .gal{
         float: left;
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(autofill,200px);
         align-content: center; 
     }
     .iii{
@@ -119,14 +119,12 @@
                 darkmode();
             }
         }
-        
-        
     </script>
 </head>
 <body id="bod" onload="activate()">
     <header id="headdd">
         <a class="home" href="drop2/main2.html">Home</a></div>
-        <img class="signature" src="picture/signature.png" alt="my signature">
+        <img class="signature" src="picture/signature.png" alt="loading...">
         <a class="about" href="about.html">About me</a>
         <div class="drklgt">
             <button id="lightmode" onclick="activate()"><img id="icon" src="picture/moon_dark_mode_night-2-512.png"></h></button>
@@ -134,7 +132,6 @@
     </header>
     <div id="fullImg" style="display: none;">
         <img id="theFullImg">
-
     </div>
     <div class="gal">
         <div class="iii">
